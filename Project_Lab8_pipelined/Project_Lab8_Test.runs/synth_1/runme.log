@@ -1,0 +1,692 @@
+
+*** Running vivado
+    with args -log Single_Cyc_SoC_fpga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Single_Cyc_SoC_fpga.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Dec  1 11:06:33 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Single_Cyc_SoC_fpga.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 552.406 ; gain = 239.219
+Command: read_checkpoint -auto_incremental -incremental C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/utils_1/imports/synth_1/Single_Cyc_SoC_fpga.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/utils_1/imports/synth_1/Single_Cyc_SoC_fpga.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Single_Cyc_SoC_fpga -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 20456
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1401.527 ; gain = 448.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'halt', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'branch', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'jump', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'reg_dst', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'we_reg', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'alu_src', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'we_dm', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'dm2reg', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'enable_write_return_addr', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'enable_register_jump', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'zero', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:71]
+INFO: [Synth 8-11241] undeclared symbol 'halt', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'branch', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'jump', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'reg_dst', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'we_reg', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'alu_src', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'we_dm', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'dm2reg', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'enable_write_return_addr', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'enable_register_jump', assumed default net type 'wire' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Single_Cyc_SoC_fpga' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/Single_Cyc_SoC_fpga.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Single_Cyc_SoC' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/Single_Cyc_SoC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pipeline' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/pipelines.v:24]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fetch_stage' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/fetch_stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/datapath/mux4.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/datapath/mux4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fetch_stage' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/fetch_stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pipeline_register' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/pipelines.v:2]
+	Parameter REGISTER_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_register' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/pipelines.v:2]
+INFO: [Synth 8-6157] synthesizing module 'decode_stage' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/auxdec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hazard_control_decoder' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/hazard_control_decoder.v:2]
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/hazard_control_decoder.v:16]
+WARNING: [Synth 8-567] referenced signal 'funct' should be on the sensitivity list [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/hazard_control_decoder.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_control_decoder' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/hazard_control_decoder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/controlunit.v:1]
+WARNING: [Synth 8-7071] port 'hazard_control_signals' of module 'controlunit' is unconnected for instance 'cu' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:24]
+WARNING: [Synth 8-7023] instance 'cu' of module 'controlunit' has 3 connections declared, but only 2 given [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:24]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decode_stage' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/decode_stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pipeline_register__parameterized0' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/pipelines.v:2]
+	Parameter REGISTER_WIDTH bound to: 192 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_register__parameterized0' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/pipelines.v:2]
+INFO: [Synth 8-6157] synthesizing module 'execute_stage' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:1]
+WARNING: [Synth 8-567] referenced signal 'shmt' should be on the sensitivity list [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:21]
+WARNING: [Synth 8-567] referenced signal 'multiplier_register' should be on the sensitivity list [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:1]
+WARNING: [Synth 8-7071] port 'zero' of module 'alu' is unconnected for instance 'alu' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:37]
+WARNING: [Synth 8-7023] instance 'alu' of module 'alu' has 7 connections declared, but only 6 given [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'execute_stage' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/execute_stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pipeline_register__parameterized1' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/pipelines.v:2]
+	Parameter REGISTER_WIDTH bound to: 160 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_register__parameterized1' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/pipelines.v:2]
+INFO: [Synth 8-6157] synthesizing module 'memory_stage' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/memory_stage.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'memory_stage' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/memory_stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register_writeback_stage' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/register_writeback_stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register_writeback_stage' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/register_writeback_stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'halt_latch' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/halt_latch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'halt_latch' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/halt_latch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hazard_control' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decode_stage_hazard_decoder' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'decode_stage_hazard_decoder' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:82]
+INFO: [Synth 8-6157] synthesizing module 'execute_stage_hazard_decoder' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'execute_stage_hazard_decoder' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:103]
+INFO: [Synth 8-6157] synthesizing module 'memory_stage_hazard_decoder' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'memory_stage_hazard_decoder' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:124]
+INFO: [Synth 8-6157] synthesizing module 'register_writeback_stage_hazard_decoder' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'register_writeback_stage_hazard_decoder' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_control' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/pipelines.v:24]
+WARNING: [Synth 8-7071] port 'halted' of module 'pipeline' is unconnected for instance 'mips' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/Single_Cyc_SoC.v:22]
+WARNING: [Synth 8-7023] instance 'mips' of module 'pipeline' has 11 connections declared, but only 10 given [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/Single_Cyc_SoC.v:22]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/memory/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memfile1.dat' is read successfully [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/memory/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/memory/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/memory/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/memory/dmem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SoC_ad' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/SoC_ad.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_ad' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/SoC_ad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SoC_mux4' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/SoC_mux4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/SoC_mux4.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_mux4' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/SoC_mux4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_top' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_ad' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_ad.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_ad.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'fact_ad' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_ad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+	Parameter w bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+	Parameter w bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized0' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized1' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized1' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_and' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_and.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_and' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_and.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_mux4' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mux4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mux4.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fact_mux4' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mux4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_done_reg' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_done_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_done_reg' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_done_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_err_reg' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_err_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_err_reg' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_err_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/CU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/CU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DP' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/DP.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cmp' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/cmp.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cmp' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/cmp.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cnt' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/cnt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cnt' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/cnt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_mux' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_mux' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regdff' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/regdff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regdff' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/regdff.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_mul' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mul.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_mul' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mul.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DP' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/DP.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_top' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_ad' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_ad.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_ad.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_ad' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_ad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_reg' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_reg' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_mux4' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_mux4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_mux4.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_mux4' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_mux4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cyc_SoC' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/Single_Cyc_SoC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cyc_SoC_fpga' (0#1) [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/Single_Cyc_SoC_fpga.v:3]
+WARNING: [Synth 8-3848] Net _hazard_control_signals in module/entity register_writeback_stage_hazard_decoder does not have driver. [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/pipelines/hazard_control.v:152]
+WARNING: [Synth 8-7129] Port a[31] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[31] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[159] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[158] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[157] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[156] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[155] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[154] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[153] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[152] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[151] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[150] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[149] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[148] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[147] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[146] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[145] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[144] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[143] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[142] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[141] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[140] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[139] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[138] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[137] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[136] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[135] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[134] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[133] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[132] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[131] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[130] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[129] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[128] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[127] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[126] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[125] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[124] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[123] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[122] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[121] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[120] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[119] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[118] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[117] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[116] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[115] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[114] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[113] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stage_input[112] in module register_writeback_stage_hazard_decoder is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1518.918 ; gain = 566.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1518.918 ; gain = 566.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1518.918 ; gain = 566.293
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1518.918 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/constrs_1/imports/validation_wrapper/mips_fpga.xdc]
+Finished Parsing XDC File [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/constrs_1/imports/validation_wrapper/mips_fpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/constrs_1/imports/validation_wrapper/mips_fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Single_Cyc_SoC_fpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Single_Cyc_SoC_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1615.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1615.578 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_reg' in module 'CU'
+WARNING: [Synth 8-327] inferring latch for variable 'halted_reg' [C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.srcs/sources_1/imports/src/control_unit/halt_latch.v:10]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                  iSTATE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_reg' using encoding 'sequential' in module 'CU'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 6     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	              160 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 39    
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	              32x32  Multipliers := 1     
+	               4x32  Multipliers := 1     
++---Muxes : 
+	   2 Input  192 Bit        Muxes := 1     
+	   2 Input  160 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 7     
+	   4 Input   32 Bit        Muxes := 4     
+	  18 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 9     
+	   3 Input    5 Bit        Muxes := 4     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 41    
+	   4 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP alu/multiplier_register0, operation Mode is: A*B.
+DSP Report: operator alu/multiplier_register0 is absorbed into DSP alu/multiplier_register0.
+DSP Report: operator alu/multiplier_register0 is absorbed into DSP alu/multiplier_register0.
+DSP Report: Generating DSP alu/multiplier_register_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register alu/multiplier_register_reg is absorbed into DSP alu/multiplier_register_reg.
+DSP Report: operator alu/multiplier_register0 is absorbed into DSP alu/multiplier_register_reg.
+DSP Report: operator alu/multiplier_register0 is absorbed into DSP alu/multiplier_register_reg.
+DSP Report: Generating DSP alu/multiplier_register0, operation Mode is: A*B.
+DSP Report: operator alu/multiplier_register0 is absorbed into DSP alu/multiplier_register0.
+DSP Report: operator alu/multiplier_register0 is absorbed into DSP alu/multiplier_register0.
+DSP Report: Generating DSP alu/multiplier_register_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register alu/multiplier_register_reg is absorbed into DSP alu/multiplier_register_reg.
+DSP Report: operator alu/multiplier_register0 is absorbed into DSP alu/multiplier_register_reg.
+DSP Report: operator alu/multiplier_register0 is absorbed into DSP alu/multiplier_register_reg.
+DSP Report: Generating DSP Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z, operation Mode is: A2*B2.
+DSP Report: register Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z is absorbed into DSP Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z.
+DSP Report: register Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z is absorbed into DSP Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z.
+DSP Report: operator Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z is absorbed into DSP Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z.
+DSP Report: operator Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z is absorbed into DSP Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z.
+DSP Report: Generating DSP Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z is absorbed into DSP Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z.
+DSP Report: register Single_Cyc_SoC/factorial_accelerator/fact/datapath1/reg1/Q_reg is absorbed into DSP Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z.
+DSP Report: operator Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z is absorbed into DSP Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z.
+DSP Report: operator Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z is absorbed into DSP Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[47]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[46]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[45]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[44]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[43]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[42]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[41]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[40]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[39]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[38]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[37]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[36]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[35]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[34]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[33]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[32]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[31]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[30]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[29]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[28]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[27]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[26]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[25]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[24]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[23]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[22]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[21]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[20]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[19]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[18]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[17]) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[47]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[46]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[45]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[44]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[43]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[42]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[41]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[40]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[39]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[38]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[37]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[36]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[35]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[34]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[33]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[32]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[31]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[30]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[29]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[28]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[27]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[26]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[25]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[24]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[23]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[22]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[21]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[20]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[19]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[18]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (alu/multiplier_register_reg[17]__0) is unused and will be removed from module execute_stage.
+WARNING: [Synth 8-3332] Sequential element (_halt_latch/halted_reg) is unused and will be removed from module pipeline.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+ Sort Area is  alu/multiplier_register0_0 : 0 0 : 2701 5095 : Used 1 time 0
+ Sort Area is  alu/multiplier_register0_0 : 0 1 : 2394 5095 : Used 1 time 0
+ Sort Area is  alu/multiplier_register0_3 : 0 0 : 2339 4542 : Used 1 time 0
+ Sort Area is  alu/multiplier_register0_3 : 0 1 : 2203 4542 : Used 1 time 0
+ Sort Area is  Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z_6 : 0 0 : 872 1717 : Used 1 time 0
+ Sort Area is  Single_Cyc_SoC/factorial_accelerator/fact/datapath1/mul1/Z_6 : 0 1 : 845 1717 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------+-----------------------------+-----------+----------------------+----------------+
+|Module Name         | RTL Object                  | Inference | Size (Depth x Width) | Primitives     | 
++--------------------+-----------------------------+-----------+----------------------+----------------+
+|Single_Cyc_SoC_fpga | Single_Cyc_SoC/dmem/ram_reg | Implied   | 64 x 32              | RAM64X1S x 32  | 
++--------------------+-----------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|execute_stage       | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|execute_stage       | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|execute_stage       | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|execute_stage       | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|Single_Cyc_SoC_fpga | A2*B2            | 18     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Single_Cyc_SoC_fpga | (PCIN>>17)+A2*B2 | 16     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++--------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------------+-----------------------------+-----------+----------------------+----------------+
+|Module Name         | RTL Object                  | Inference | Size (Depth x Width) | Primitives     | 
++--------------------+-----------------------------+-----------+----------------------+----------------+
+|Single_Cyc_SoC_fpga | Single_Cyc_SoC/dmem/ram_reg | Implied   | 64 x 32              | RAM64X1S x 32  | 
++--------------------+-----------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Single_Cyc_SoC_fpga | A'*B'           | 17     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Single_Cyc_SoC_fpga | PCIN>>17+A'*B'  | 15     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|execute_stage       | A*B             | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|execute_stage       | (PCIN>>17+A*B)' | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|execute_stage       | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|execute_stage       | (PCIN>>17+A*B)' | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++--------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    44|
+|3     |DSP48E1  |     6|
+|6     |LUT1     |     3|
+|7     |LUT2     |   128|
+|8     |LUT3     |   147|
+|9     |LUT4     |   171|
+|10    |LUT5     |   260|
+|11    |LUT6     |   432|
+|12    |MUXF7    |   103|
+|13    |MUXF8    |    35|
+|14    |RAM64X1S |    32|
+|15    |FDCE     |   394|
+|16    |FDRE     |   553|
+|17    |IBUF     |     7|
+|18    |OBUF     |    17|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1615.578 ; gain = 662.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 797 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1615.578 ; gain = 566.293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1615.578 ; gain = 662.953
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1615.578 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 220 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1615.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: 58aa6e12
+INFO: [Common 17-83] Releasing license: Synthesis
+172 Infos, 177 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1615.578 ; gain = 1058.828
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1615.578 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lehat/OneDrive/Desktop/Project_Lab8_Testp2/Project_Lab8_Test.runs/synth_1/Single_Cyc_SoC_fpga.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Single_Cyc_SoC_fpga_utilization_synth.rpt -pb Single_Cyc_SoC_fpga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  1 11:07:34 2025...

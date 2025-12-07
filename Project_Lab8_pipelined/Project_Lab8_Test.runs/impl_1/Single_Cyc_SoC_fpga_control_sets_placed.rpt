@@ -1,0 +1,105 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Dec  1 11:08:12 2025
+| Host         : ha_hp running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Single_Cyc_SoC_fpga_control_sets_placed.rpt
+| Design       : Single_Cyc_SoC_fpga
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    27 |
+|    Minimum number of control sets                        |    27 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    40 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    27 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    23 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |             260 |           93 |
+| No           | Yes                   | No                     |              33 |            9 |
+| Yes          | No                    | No                     |             518 |          191 |
+| Yes          | No                    | Yes                    |             139 |           45 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |                                       Enable Signal                                       | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_5KHz_BUFG |                                                                                           |                  |                2 |              2 |         1.00 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/factorial_accelerator/fact/datapath1/cnt1/FSM_sequential_current_reg[1][0] |                  |                1 |              4 |         4.00 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/execute_memory_cache/out_reg[55]_2[0]                                 | rst_IBUF         |                1 |              4 |         4.00 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/fetch_decode_cache/q[6]_i_3_0                                         | rst_IBUF         |                4 |              6 |         1.50 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/fetch_decode_cache/out[63]_i_1_n_0                                    | rst_IBUF         |               11 |             28 |         2.55 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/factorial_accelerator/fact/datapath1/cnt1/E[0]                             | rst_IBUF         |                7 |             32 |         4.57 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/execute_memory_cache/E[0]                                             | rst_IBUF         |               12 |             32 |         2.67 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_11[0]                              |                  |                9 |             32 |         3.56 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_0[0]                               |                  |                8 |             32 |         4.00 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_6[0]                               |                  |               17 |             32 |         1.88 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_1[0]                               |                  |               10 |             32 |         3.20 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_10[0]                              |                  |               11 |             32 |         2.91 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_9[0]                               |                  |               12 |             32 |         2.67 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_12[0]                              |                  |               10 |             32 |         3.20 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_4[0]                               |                  |               14 |             32 |         2.29 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/E[0]                                           |                  |               12 |             32 |         2.67 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_2[0]                               |                  |               13 |             32 |         2.46 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_8[0]                               |                  |                7 |             32 |         4.57 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_3[0]                               |                  |               10 |             32 |         3.20 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_13[0]                              |                  |                9 |             32 |         3.56 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_5[0]                               |                  |               15 |             32 |         2.13 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/memory_writeback_cache/out_reg[25]_7[0]                               |                  |               24 |             32 |         1.33 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/execute_memory_cache/WEM                                              |                  |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                                                                                           | rst_IBUF         |                9 |             33 |         3.67 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/decode_execute_cache/E[0]                                             |                  |                9 |             34 |         3.78 |
+|  clk_5KHz_BUFG | Single_Cyc_SoC/mips/execute_memory_cache/out_reg[66]_0[0]                                 | rst_IBUF         |               10 |             37 |         3.70 |
+|  clk_5KHz_BUFG |                                                                                           | rst_IBUF         |               93 |            260 |         2.80 |
++----------------+-------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+
+
