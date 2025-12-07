@@ -1,0 +1,479 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Nov 30 22:52:21 2025
+# Process ID: 25164
+# Current directory: C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.runs/synth_1
+# Command line: vivado.exe -log Single_Cyc_SoC_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Single_Cyc_SoC_fpga.tcl
+# Log file: C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.runs/synth_1/Single_Cyc_SoC_fpga.vds
+# Journal file: C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.runs/synth_1\vivado.jou
+# Running On        :ha_hp
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1155G7 @ 2.50GHz
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :12622 MB
+# Swap memory       :4563 MB
+# Total Virtual     :17186 MB
+# Available Virtual :6157 MB
+#-----------------------------------------------------------
+source Single_Cyc_SoC_fpga.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 550.328 ; gain = 232.848
+Command: synth_design -top Single_Cyc_SoC_fpga -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 16200
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1397.527 ; gain = 446.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Single_Cyc_SoC_fpga' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/Single_Cyc_SoC_fpga.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Single_Cyc_SoC' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/Single_Cyc_SoC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memfile1.dat' is read successfully [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SoC_ad' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/SoC_ad.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_ad' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/SoC_ad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SoC_mux4' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/SoC_mux4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/SoC_mux4.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_mux4' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/SoC_mux4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_top' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_ad' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_ad.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_ad.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'fact_ad' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_ad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+	Parameter w bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+	Parameter w bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized0' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized1' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized1' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_and' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_and.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_and' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_and.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_mux4' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mux4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mux4.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fact_mux4' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mux4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_done_reg' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_done_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_done_reg' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_done_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_err_reg' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_err_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_err_reg' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_err_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/CU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/CU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DP' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/DP.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cmp' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/cmp.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cmp' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/cmp.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cnt' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/cnt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cnt' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/cnt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_mux' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_mux' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regdff' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/regdff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regdff' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/regdff.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_mul' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mul.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_mul' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_mul.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DP' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/DP.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_top' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_ad' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_ad.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_ad.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_ad' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_ad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_reg' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_reg' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_mux4' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_mux4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_mux4.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_mux4' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_mux4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cyc_SoC' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/Single_Cyc_SoC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cyc_SoC_fpga' (0#1) [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/Single_Cyc_SoC_fpga.v:3]
+WARNING: [Synth 8-7129] Port instr[31] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[27] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[26] in module datapath is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1509.977 ; gain = 559.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1509.977 ; gain = 559.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1509.977 ; gain = 559.418
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1509.977 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/constrs_1/imports/validation_wrapper/mips_fpga.xdc]
+Finished Parsing XDC File [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/constrs_1/imports/validation_wrapper/mips_fpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/constrs_1/imports/validation_wrapper/mips_fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Single_Cyc_SoC_fpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Single_Cyc_SoC_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1611.102 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_reg' in module 'CU'
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:9]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                  iSTATE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_reg' using encoding 'sequential' in module 'CU'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	               4x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 9     
+	  18 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP fact/datapath1/mul1/Z, operation Mode is: A2*B2.
+DSP Report: register fact/datapath1/mul1/Z is absorbed into DSP fact/datapath1/mul1/Z.
+DSP Report: register fact/datapath1/mul1/Z is absorbed into DSP fact/datapath1/mul1/Z.
+DSP Report: operator fact/datapath1/mul1/Z is absorbed into DSP fact/datapath1/mul1/Z.
+DSP Report: operator fact/datapath1/mul1/Z is absorbed into DSP fact/datapath1/mul1/Z.
+DSP Report: Generating DSP fact/datapath1/mul1/Z, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register fact/datapath1/mul1/Z is absorbed into DSP fact/datapath1/mul1/Z.
+DSP Report: register fact/datapath1/reg1/Q_reg is absorbed into DSP fact/datapath1/mul1/Z.
+DSP Report: operator fact/datapath1/mul1/Z is absorbed into DSP fact/datapath1/mul1/Z.
+DSP Report: operator fact/datapath1/mul1/Z is absorbed into DSP fact/datapath1/mul1/Z.
+WARNING: [Synth 8-7129] Port a[5] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port button in module Single_Cyc_SoC_fpga is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+ Sort Area is  fact/datapath1/mul1/Z_0 : 0 0 : 872 1717 : Used 1 time 0
+ Sort Area is  fact/datapath1/mul1/Z_0 : 0 1 : 845 1717 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------+----------------------------------+-----------+----------------------+----------------+
+|Module Name         | RTL Object                       | Inference | Size (Depth x Width) | Primitives     | 
++--------------------+----------------------------------+-----------+----------------------+----------------+
+|Single_Cyc_SoC_fpga | Single_Cyc_SoC/mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18    | 
+|Single_Cyc_SoC_fpga | Single_Cyc_SoC/dmem/ram_reg      | Implied   | 64 x 32              | RAM64X1S x 32  | 
++--------------------+----------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fact_top    | A2*B2            | 18     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fact_top    | (PCIN>>17)+A2*B2 | 16     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------------+----------------------------------+-----------+----------------------+----------------+
+|Module Name         | RTL Object                       | Inference | Size (Depth x Width) | Primitives     | 
++--------------------+----------------------------------+-----------+----------------------+----------------+
+|Single_Cyc_SoC_fpga | Single_Cyc_SoC/mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18    | 
+|Single_Cyc_SoC_fpga | Single_Cyc_SoC/dmem/ram_reg      | Implied   | 64 x 32              | RAM64X1S x 32  | 
++--------------------+----------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[31]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[30]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[29]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[28]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[27]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[26]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[25]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[24]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[23]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[22]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[21]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[20]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[19]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[18]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[17]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[16]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[15]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[14]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[13]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[12]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[11]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[10]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[9]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[8]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[7]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[6]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[5]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[4]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[3]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[2]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[1]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+WARNING: [Synth 8-3332] Sequential element (Single_Cyc_SoC/mips/dp/alu/y_reg[0]) is unused and will be removed from module Single_Cyc_SoC_fpga.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fact_top    | A'*B'          | 17     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fact_top    | PCIN>>17+A'*B' | 15     | 4      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    32|
+|3     |DSP48E1  |     2|
+|4     |LUT1     |     3|
+|5     |LUT2     |    18|
+|6     |LUT3     |    92|
+|7     |LUT4     |    65|
+|8     |LUT5     |    69|
+|9     |LUT6     |   370|
+|10    |MUXF7    |     4|
+|11    |MUXF8    |     2|
+|12    |RAM32M   |    10|
+|13    |RAM32X1D |     4|
+|14    |RAM64X1S |    32|
+|15    |FDCE     |   111|
+|16    |FDRE     |    39|
+|17    |IBUF     |     7|
+|18    |OBUF     |    17|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.102 ; gain = 660.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1611.102 ; gain = 559.418
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.102 ; gain = 660.543
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1611.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: 77930bd5
+INFO: [Common 17-83] Releasing license: Synthesis
+115 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:58 . Memory (MB): peak = 1611.102 ; gain = 1060.773
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1611.102 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lehat/OneDrive/Desktop/CMPE140Lab7/Project_Lab8_Test/Project_Lab8_Test.runs/synth_1/Single_Cyc_SoC_fpga.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Single_Cyc_SoC_fpga_utilization_synth.rpt -pb Single_Cyc_SoC_fpga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 30 22:53:31 2025...

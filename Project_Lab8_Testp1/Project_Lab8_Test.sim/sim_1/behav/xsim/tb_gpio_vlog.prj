@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_ad.v" \
+"../../../../Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_mux4.v" \
+"../../../../Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_reg.v" \
+"../../../../Project_Lab8_Test.srcs/sources_1/imports/cmpe140lab7v3.srcs/sources_1/new/gpio_top.v" \
+"../../../../Project_Lab8_Test.srcs/sim_1/new/tb_gpio.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
